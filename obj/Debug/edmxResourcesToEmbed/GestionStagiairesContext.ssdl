@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionStagiairesContext.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="GestionStagiairesContextStoreContainer">
+    <EntitySet Name="Formations" EntityType="GestionStagiairesContext.Store.Formations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Stagiaires" EntityType="GestionStagiairesContext.Store.Stagiaires" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="StagiaireFormation" Association="GestionStagiairesContext.Store.StagiaireFormation">
+      <End Role="Stagiaire" EntitySet="Stagiaires" />
+      <End Role="Formation" EntitySet="Formations" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Formations">
+    <Key>
+      <PropertyRef Name="IdFormation" />
+    </Key>
+    <Property Name="IdFormation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stagiaires">
+    <Key>
+      <PropertyRef Name="IdStagiaire" />
+    </Key>
+    <Property Name="IdStagiaire" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Prenom" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateNaissance" Type="datetime" Nullable="true" />
+    <Property Name="IdFormation" Type="int" Nullable="true" />
+  </EntityType>
+  <Association Name="StagiaireFormation">
+    <End Role="Stagiaire" Type="GestionStagiairesContext.Store.Stagiaires" Multiplicity="*" />
+    <End Role="Formation" Type="GestionStagiairesContext.Store.Formations" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Formation">
+        <PropertyRef Name="IdFormation" />
+      </Principal>
+      <Dependent Role="Stagiaire">
+        <PropertyRef Name="IdFormation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,20 @@
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.csprojResolveAssemblyReference.cache
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion_Stagiaires.frmMain.resources
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion_Stagiaires.Properties.Resources.resources
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.csproj.GenerateResource.Cache
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\Gestion Stagiaires.exe.config
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\Gestion Stagiaires.exe
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\Gestion Stagiaires.pdb
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\EntityFramework.dll
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\EntityFramework.SqlServer.dll
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\EntityFramework.xml
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\EntityFramework.SqlServer.xml
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\bin\Debug\fr\EntityFramework.resources.dll
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.exe
+E:\My Studies\I ♥ Studing\Client-Server applications\Client-Serveur programming\SECTION 5\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.pdb
+C:\Users\Yassine\Desktop\Controle Client Serveur\Entity Framework\Gestion Stagiaires\bin\Debug\Gestion Stagiaires.exe.config
+C:\Users\Yassine\Desktop\Controle Client Serveur\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.exe
+C:\Users\Yassine\Desktop\Controle Client Serveur\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.pdb
+C:\Users\Yassine\Desktop\Goods\Controle Client Serveur\Entity Framework\Gestion Stagiaires\bin\Debug\Gestion Stagiaires.exe.config
+C:\Users\Yassine\Desktop\Goods\Controle Client Serveur\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.exe
+C:\Users\Yassine\Desktop\Goods\Controle Client Serveur\Entity Framework\Gestion Stagiaires\obj\Debug\Gestion Stagiaires.pdb

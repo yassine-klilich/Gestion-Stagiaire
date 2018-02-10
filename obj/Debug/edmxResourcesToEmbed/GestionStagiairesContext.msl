@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestionStagiairesContextStoreContainer" CdmEntityContainer="GestionStagiairesContextContainer">
+    <EntitySetMapping Name="Formations">
+      <EntityTypeMapping TypeName="IsTypeOf(GestionStagiairesContext.Formation)">
+        <MappingFragment StoreEntitySet="Formations">
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stagiaires">
+      <EntityTypeMapping TypeName="IsTypeOf(GestionStagiairesContext.Stagiaire)">
+        <MappingFragment StoreEntitySet="Stagiaires">
+          <ScalarProperty Name="IdStagiaire" ColumnName="IdStagiaire" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="DateNaissance" ColumnName="DateNaissance" />
+          <ScalarProperty Name="IdFormation" ColumnName="IdFormation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

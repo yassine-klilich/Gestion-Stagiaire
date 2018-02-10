@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="GestionStagiairesContext" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="GestionStagiairesContextContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Formations" EntityType="GestionStagiairesContext.Formation" />
+    <EntitySet Name="Stagiaires" EntityType="GestionStagiairesContext.Stagiaire" />
+    <AssociationSet Name="StagiaireFormation" Association="GestionStagiairesContext.StagiaireFormation">
+      <End Role="Stagiaire" EntitySet="Stagiaires" />
+      <End Role="Formation" EntitySet="Formations" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Formation">
+    <Key>
+      <PropertyRef Name="IdFormation" />
+    </Key>
+    <Property Name="IdFormation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" />
+    <NavigationProperty Name="Stagiaire" Relationship="GestionStagiairesContext.StagiaireFormation" FromRole="Formation" ToRole="Stagiaire" />
+  </EntityType>
+  <EntityType Name="Stagiaire">
+    <Key>
+      <PropertyRef Name="IdStagiaire" />
+    </Key>
+    <Property Name="IdStagiaire" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" Nullable="false" />
+    <Property Name="Prenom" Type="String" Nullable="false" />
+    <Property Name="DateNaissance" Type="DateTime" Nullable="true" />
+    <NavigationProperty Name="Formation" Relationship="GestionStagiairesContext.StagiaireFormation" FromRole="Stagiaire" ToRole="Formation" />
+    <Property Name="IdFormation" Type="Int32" Nullable="true" />
+  </EntityType>
+  <Association Name="StagiaireFormation">
+    <End Type="GestionStagiairesContext.Stagiaire" Role="Stagiaire" Multiplicity="*" />
+    <End Type="GestionStagiairesContext.Formation" Role="Formation" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Formation">
+        <PropertyRef Name="IdFormation" />
+      </Principal>
+      <Dependent Role="Stagiaire">
+        <PropertyRef Name="IdFormation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
